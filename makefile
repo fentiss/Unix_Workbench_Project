@@ -2,10 +2,10 @@ all: README.md
 
 README.md: 
 	echo "# Peer-Graded Assignment: Guessing Game" > README.md
-	echo "The *bash script* contains the following number of lines" >> README.md
+	echo "The *bash script* contains the following number of lines:" >> README.md
 	wc -l guessinggame.sh | egrep -o "[0-9]"+ >> README.md
 	echo "" >> README.md
-	echo "This **README** file was made using make on: " >> README.md 
+	echo "This **README** file was made using the [[ make ]] command  on: " >> README.md 
 	date >> README.md
 
 clean:
